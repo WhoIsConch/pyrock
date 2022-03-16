@@ -44,6 +44,7 @@ class Client:
 
         if inspect.isawaitable(resp):
             async def ret_coro(resp_):
+                await resp_
                 try:
                     return_json_ = await resp_.json()
                 except:
