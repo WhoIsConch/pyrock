@@ -6,6 +6,6 @@ rock = client.get_random_rock()
 
 print(rock.name)
 
-newrock = client.get_rock("glow roeck")
+newrock = client.get_rock("glow rock")
 
 print(newrock.description)

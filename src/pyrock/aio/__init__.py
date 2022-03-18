@@ -1,5 +1,5 @@
 import aiohttp
-from pyrock.wrapper import Client
+from pyrock import *
 
 class Client(Client):
     def __init__(self, *args, **kwargs):
