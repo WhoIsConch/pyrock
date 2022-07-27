@@ -8,7 +8,7 @@ import aiohttp
 class Client:
     def __init__(self):
         self._session = requests.session()
-        self.api_url = "https://mrconos.pythonanywhere.com/rock/"
+        self.api_url = "https://rockapi.apiworks.tech/rock"
     
     @property
     def session(self) -> typing.Union[aiohttp.ClientSession, requests.Session]:
