@@ -2,6 +2,9 @@ from __future__ import annotations
 import typing
 
 class Rock:
+    """
+    Defines a rock. This is created and returned when a user gets a rock from the API.
+    """
     def __init__(self, name, description, image, rating):
         self.name = name
         self.description = description
@@ -9,9 +12,6 @@ class Rock:
         self.image = image
         self.rating = rating
 
-    """
-    Defines a rock. This is created and returned when a user gets a rock from the API.
-    """
 
     @classmethod
     def from_dict(cls, dict_: dict) -> Rock:

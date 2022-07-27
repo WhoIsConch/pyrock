@@ -95,3 +95,4 @@ class Client:
                 raise APIException(f"Rock API returned an error with status code {resp.status}: {return_json_['message']}")
             
             return Rock.from_dict(return_json_)
+            

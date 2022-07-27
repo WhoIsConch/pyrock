@@ -12,6 +12,4 @@ async def get_rock2():
     rock = await client.get_random_rock()
     print(rock.name + rock.description)
 
-print("e")
-
-asyncio.get_event_loop().run_until_complete(get_rock())
+asyncio.run(get_rock())
