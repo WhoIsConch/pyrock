@@ -1,7 +1,7 @@
 import requests
 import inspect
-from .errors import RequestFailed, APIException
-from .objects import Rock
+from errors import RequestFailed, APIException
+from objects import Rock
 import typing
 import aiohttp
 
