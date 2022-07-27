@@ -1,7 +1,7 @@
 import requests
 import inspect
-from errors import RequestFailed, APIException
-from objects import Rock
+from .errors import RequestFailed, APIException
+from .objects import Rock
 import typing
 import aiohttp
 
@@ -95,4 +95,3 @@ class Client:
                 raise APIException(f"Rock API returned an error with status code {resp.status}: {return_json_['message']}")
             
             return Rock.from_dict(return_json_)
-            

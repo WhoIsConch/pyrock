@@ -6,11 +6,11 @@ class PyrockException(Exception):
 
 class RequestFailed(PyrockException):
     """
-    Is called if a request fails.
+    Is raised if a request fails.
     """
     pass
 
 class APIException(PyrockException):
     """
-    Is called if the API returns an error.
+    Is raised if Rock API returns an error.
     """
