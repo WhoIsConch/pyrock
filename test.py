@@ -15,7 +15,7 @@ print(newrock.description)
 client_aio = Client_aio()
 
 async def get_rock():
-    rock = await client.get_rock("bedrock")
+    rock = await client_aio.get_rock("bedrock")
     print(rock.name)
 
 asyncio.run(get_rock())
